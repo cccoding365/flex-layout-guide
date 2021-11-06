@@ -13,7 +13,7 @@ body {
 .left,
 .right {
   width: 50%;
-  border-left: 1px solid #595b66;
+  /* border-left: 1px solid #595b66; */
   padding: 10px;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .box-tall {
-  height: 400px;
+  height: 300px;
 }
 
 .box-item {
@@ -37,6 +37,7 @@ body {
   font-size: 50px;
   color: white;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .item-tall {
@@ -154,4 +155,74 @@ body {
 }
 .box-align-content-stretch .box-item {
   height: auto;
+}
+
+/* 项目属性 */
+.box-item div {
+  font-size: 12px;
+  position: relative;
+  top: -70px;
+}
+
+/* order 属性 */
+.box-order .order {
+  order: -1;
+}
+
+/* flex-grow 属性 */
+.box-flex-grow .box-item {
+  flex-grow: 1;
+}
+.box-flex-grow .grow-2 {
+  flex-grow: 2;
+}
+
+.box-flex-shrink-111 .box-item {
+  width: 300px;
+  flex-shrink: 1;
+}
+
+.box-flex-shrink-011 .box-item {
+  width: 300px;
+}
+.box-flex-shrink-011 .shrink {
+  flex-shrink: 0;
+}
+
+.box-flex-basis .box-item {
+  flex-basis: 100px;
+  width: 400px;
+  /*  width 将失去作用 */
+}
+
+/* align-self 属性 */
+.box-align-self-start-center-end {
+  height: 200px;
+}
+.box-align-self-start-center-end .box-item {
+  align-self: auto;
+}
+.box-align-self-start-center-end .start {
+  align-self: flex-start;
+}
+.box-align-self-start-center-end .center {
+  align-self: center;
+}
+.box-align-self-start-center-end .end {
+  align-self: flex-end;
+}
+
+.box-align-self-baseline-stretch {
+  height: 200px;
+}
+.box-align-self-baseline-stretch .baseline {
+  font-size: 44px;
+  align-self: baseline;
+}
+.box-align-self-baseline-stretch .stretch {
+  height: auto;
+  align-self: stretch;
+}
+.box-align-self-baseline-stretch .auto {
+  align-self: auto;
 }
