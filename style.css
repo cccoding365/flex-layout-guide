@@ -3,7 +3,17 @@ body {
   margin: 0 auto;
   background-color: #e2e2e2;
   color: #595b66;
+
   font-family: 'Microsoft Yahei', sans-serif;
+}
+
+h1 {
+  font-family: 'Georgia', Serif;
+}
+
+code {
+  font-family: 'Lucida Console', Monospace;
+  font-size: 16px;
 }
 
 .content {
@@ -34,8 +44,8 @@ body {
   line-height: 100px;
   vertical-align: middle;
   border: 1px solid #fff;
-  /* margin: 5px; */
-  background-color: skyblue;
+  /* background-color: skyblue; */
+  background: linear-gradient(to bottom, #00c6ff, #0073ff9d);
   font-size: 50px;
   color: white;
   text-align: center;
@@ -232,13 +242,9 @@ body {
 /* 处理下整体样式 */
 ::-webkit-scrollbar {
   width: 4px;
+  height: 4px;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #595b66;
-}
-
-/* 高亮样式修复 */
-pre code.hljs {
-  overflow-x: hidden !important;
 }
