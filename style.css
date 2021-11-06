@@ -242,3 +242,7 @@ body {
   background-color: #e2e2e2;
 }
 
+/* 高亮样式修复 */
+pre code.hljs {
+  overflow-x: hidden !important;
+}
