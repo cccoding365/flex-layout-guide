@@ -8,13 +8,15 @@ body {
 
 .content {
   display: flex;
+  justify-content: space-around;
 }
 
 .left,
 .right {
-  width: 50%;
-  /* border-left: 1px solid #595b66; */
-  padding: 10px;
+  width: 48%;
+  height: 80vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .box {
@@ -226,3 +228,17 @@ body {
 .box-align-self-baseline-stretch .auto {
   align-self: auto;
 }
+
+/* 处理下整体样式 */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #e2e2e2;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #e2e2e2;
+}
+
