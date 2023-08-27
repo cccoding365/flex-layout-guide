@@ -1,250 +1,279 @@
 body {
-  padding: 20px;
-  margin: 0 auto;
-  background-color: #e2e2e2;
-  color: #595b66;
+	padding: 20px;
+	margin: 0 auto;
+	background-color: #e2e2e2;
+	color: #595b66;
 
-  font-family: 'Microsoft Yahei', sans-serif;
+	font-family: 'Microsoft Yahei', sans-serif;
 }
 
 h1 {
-  font-family: 'Georgia', Serif;
+	font-family: 'Georgia', Serif;
 }
 
 code {
-  font-family: 'Lucida Console', Monospace;
-  font-size: 16px;
+	font-family: 'Lucida Console', Monospace;
+	font-size: 16px;
 }
 
 .content {
-  display: flex;
-  justify-content: space-around;
+	display: flex;
+	justify-content: space-around;
 }
 
 .left,
 .right {
-  width: 48%;
-  height: 80vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
+	width: 48%;
+	height: 80vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 .box {
-  background-color: #fff;
-  display: flex;
+	background-color: #fff;
+	display: flex;
 }
 
 .box-tall {
-  height: 300px;
+	height: 300px;
 }
 
 .box-item {
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  vertical-align: middle;
-  border: 1px solid #fff;
-  /* background-color: skyblue; */
-  background: linear-gradient(to bottom, #00c6ff, #0073ff9d);
-  font-size: 50px;
-  color: white;
-  text-align: center;
-  box-sizing: border-box;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	vertical-align: middle;
+	border: 1px solid #fff;
+	/* background-color: skyblue; */
+	background: linear-gradient(to bottom, #00c6ff, #0073ff9d);
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	box-sizing: border-box;
 }
 
 .item-tall {
-  height: 200px;
-  line-height: 200px;
+	height: 200px;
+	line-height: 200px;
 }
 
 /* 容器的 flex-direction 属性 */
 .box-flex-direction-row {
-  flex-direction: row;
+	flex-direction: row;
 }
+
 .box-flex-direction-column {
-  flex-direction: column;
+	flex-direction: column;
 }
+
 .box-flex-direction-row-reverse {
-  flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
+
 .box-flex-direction-column-reverse {
-  flex-direction: column-reverse;
+	flex-direction: column-reverse;
 }
 
 /* 容器的 flex-wrap 属性 */
 .box-flex-wrap-nowrap {
-  flex-wrap: nowrap;
+	flex-wrap: nowrap;
 }
+
 .box-flex-wrap-wrap {
-  flex-wrap: wrap;
+	flex-wrap: wrap;
 }
+
 .box-flex-wrap-wrap-reverse {
-  flex-wrap: wrap-reverse;
+	flex-wrap: wrap-reverse;
 }
 
 /* 容器的 flex-flow 属性 */
 .box-flex-flow-row-nowrap {
-  flex-flow: row nowrap;
+	flex-flow: row nowrap;
 }
 
 /* 容器的 justify-content 属性 */
 .box-justify-content-flex-start {
-  justify-content: flex-start;
+	justify-content: flex-start;
 }
+
 .box-justify-content-flex-end {
-  justify-content: flex-end;
+	justify-content: flex-end;
 }
+
 .box-justify-content-center {
-  justify-content: center;
+	justify-content: center;
 }
+
 .box-justify-content-space-between {
-  justify-content: space-between;
+	justify-content: space-between;
 }
+
 .box-justify-content-space-around {
-  justify-content: space-around;
+	justify-content: space-around;
 }
+
 .box-justify-content-space-evenly {
-  justify-content: space-evenly;
+	justify-content: space-evenly;
 }
 
 /* 容器的 align-items 属性 */
 .box-align-items-flex-start {
-  align-items: flex-start;
+	align-items: flex-start;
 }
+
 .box-align-items-flex-end {
-  align-items: flex-end;
+	align-items: flex-end;
 }
+
 .box-align-items-center {
-  align-items: center;
+	align-items: center;
 }
+
 .box-align-items-baseline {
-  align-items: baseline;
+	align-items: baseline;
 }
 
 .box-align-items-baseline .box-item {
-  font-size: 44px;
-  line-height: initial;
-  text-decoration: underline;
+	font-size: 44px;
+	line-height: initial;
+	text-decoration: underline;
 }
 
 .box-align-items-baseline .item-tall {
-  font-size: 64px;
-  line-height: initial;
+	font-size: 64px;
+	line-height: initial;
 }
 
 .box-align-items-stretch {
-  align-items: stretch;
+	align-items: stretch;
 }
 
 .box-align-items-stretch .box-item {
-  height: auto;
+	height: auto;
 }
 
 /* 容器的 align-content 属性 */
 .box-align-content-flex-start {
-  flex-wrap: wrap;
-  align-content: flex-start;
+	flex-wrap: wrap;
+	align-content: flex-start;
 }
+
 .box-align-content-flex-end {
-  flex-wrap: wrap;
-  align-content: flex-end;
+	flex-wrap: wrap;
+	align-content: flex-end;
 }
+
 .box-align-content-center {
-  flex-wrap: wrap;
-  align-content: center;
+	flex-wrap: wrap;
+	align-content: center;
 }
+
 .box-align-content-space-between {
-  flex-wrap: wrap;
-  align-content: space-between;
+	flex-wrap: wrap;
+	align-content: space-between;
 }
+
 .box-align-content-space-around {
-  flex-wrap: wrap;
-  align-content: space-around;
+	flex-wrap: wrap;
+	align-content: space-around;
 }
+
 .box-align-content-stretch {
-  flex-wrap: wrap;
-  align-content: stretch;
+	flex-wrap: wrap;
+	align-content: stretch;
 }
+
 .box-align-content-stretch .box-item {
-  height: auto;
+	height: auto;
 }
 
 /* 项目属性 */
 .box-item div {
-  font-size: 12px;
-  position: relative;
-  top: -70px;
+	font-size: 12px;
+	position: relative;
+	top: -70px;
 }
 
 /* order 属性 */
 .box-order .order {
-  order: -1;
+	order: -1;
 }
 
 /* flex-grow 属性 */
 .box-flex-grow .box-item {
-  flex-grow: 1;
+	flex-grow: 1;
 }
+
 .box-flex-grow .grow-2 {
-  flex-grow: 2;
+	flex-grow: 2;
 }
 
 .box-flex-shrink-111 .box-item {
-  width: 300px;
-  flex-shrink: 1;
+	width: 300px;
+	flex-shrink: 1;
 }
 
 .box-flex-shrink-011 .box-item {
-  width: 300px;
+	width: 300px;
 }
+
 .box-flex-shrink-011 .shrink {
-  flex-shrink: 0;
+	flex-shrink: 0;
 }
 
 .box-flex-basis .box-item {
-  flex-basis: 100px;
-  width: 400px;
-  /*  width 将失去作用 */
+	flex-basis: 100px;
+	width: 400px;
+	/*  width 将失去作用 */
 }
 
 /* align-self 属性 */
 .box-align-self-start-center-end {
-  height: 200px;
+	height: 200px;
 }
+
 .box-align-self-start-center-end .box-item {
-  align-self: auto;
+	align-self: auto;
 }
+
 .box-align-self-start-center-end .start {
-  align-self: flex-start;
+	align-self: flex-start;
 }
+
 .box-align-self-start-center-end .center {
-  align-self: center;
+	align-self: center;
 }
+
 .box-align-self-start-center-end .end {
-  align-self: flex-end;
+	align-self: flex-end;
 }
 
 .box-align-self-baseline-stretch {
-  height: 200px;
+	height: 200px;
 }
+
 .box-align-self-baseline-stretch .baseline {
-  font-size: 44px;
-  align-self: baseline;
+	font-size: 44px;
+	align-self: baseline;
 }
+
 .box-align-self-baseline-stretch .stretch {
-  height: auto;
-  align-self: stretch;
+	height: auto;
+	align-self: stretch;
 }
+
 .box-align-self-baseline-stretch .auto {
-  align-self: auto;
+	align-self: auto;
 }
 
 /* 处理下整体样式 */
 ::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
+	width: 4px;
+	height: 4px;
 }
+
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #595b66;
+	border-radius: 10px;
+	background-color: #595b66;
 }
