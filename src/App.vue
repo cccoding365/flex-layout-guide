@@ -8,8 +8,14 @@
 			</span>
 		</div>
 	</div>
+
+	<div class="item-config" v-show="isShowItemConfig">
+		{{ activeItemIdx }}
+	</div>
+
 	<div class="container" :style="defaultConfig">
-		<div v-for="( item, idx ) in  9 " class="item">
+		<div v-for="( item, idx ) in  9 " class="item" @click="itemClickHandle(idx)"
+			 :style="idx === activeItemIdx ? itemConfig : null">
 			<div class="inner-box">
 				{{ idx + 1 }}
 			</div>
@@ -31,8 +37,20 @@ let defaultConfig = ref({
 	'align-content': 'flex-start'
 })
 
+let itemConfig = ref({
+	'align-self': 'flex-end'
+})
+
 const setProperty = (property, it) => {
 	defaultConfig.value[property] = it
+}
+
+let isShowItemConfig = ref(false)
+let activeItemIdx = ref(null)
+
+const itemClickHandle = (item) => {
+	activeItemIdx.value = item
+	isShowItemConfig.value = true
 }
 
 </script>
@@ -63,7 +81,6 @@ const setProperty = (property, it) => {
 			border-radius: 8px;
 			border: 3px solid #eee;
 			color: #aaa;
-			// width: 150px;
 			text-align: center;
 			cursor: pointer;
 			box-shadow: none;
@@ -100,7 +117,10 @@ const setProperty = (property, it) => {
 		border: 3px solid #eee;
 		background-color: skyblue;
 		box-shadow: 3px 3px 10px 3px #00000055;
-		transition: all .25s ease-in-out;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
 
 		.inner-box {
 			width: 100px;

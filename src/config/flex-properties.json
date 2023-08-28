@@ -11,7 +11,8 @@
     ],
     "flex-wrap": [
         "nowrap",
-        "wrap"
+        "wrap",
+        "wrap-reverse"
     ],
     "justify-content": [
         "flex-start",
