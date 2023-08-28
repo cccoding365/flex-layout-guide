@@ -9,4 +9,9 @@ body {
   background-color: #ccc;
   user-select: none;
   padding: 16px;
+  height: 100vh;
+}
+
+#app {
+  height: 100%;
 }
