@@ -1,16 +1,10 @@
 <template>
-    <div class="container">
-        <div class="item">
-            <div class="innerbox">1</div>
-        </div>
-        <div class="item">
-            <div class="innerbox">2</div>
-        </div>
-        <div class="item">
-            <div class="innerbox">3</div>
-        </div>
-    </div>
+    <flexBox :num="3" />
 </template>
+
+<script setup>
+import flexBox from '@/components/flexBox.vue'
+</script>
 
 <style lang="less" scoped>
 .container {

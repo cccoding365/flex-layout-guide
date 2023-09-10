@@ -1,10 +1,10 @@
 <template>
-    <div class="container">
-        <div class="item" v-for="(item, idx) in 3">
-            <div class="innerbox">{{ idx + 1 }}</div>
-        </div>
-    </div>
+    <flexBox :num="3" />
 </template>
+
+<script setup>
+import flexBox from '@/components/flexBox.vue'
+</script>
 
 <style lang="less" scoped>
 .container {
