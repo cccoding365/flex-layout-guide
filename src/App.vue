@@ -1,17 +1,13 @@
 <template>
     <main>
-        <Demo1 />
-        <Demo2 />
-        <Demo3 />
-        <Demo4 />
+        <flexDirection />
+        <justifyContent/>
     </main>
 </template>
 
 <script setup>
-import Demo1 from './components/Demo1.vue';
-import Demo2 from './components/Demo2.vue';
-import Demo3 from './components/Demo3.vue';
-import Demo4 from './components/Demo4.vue';
+import flexDirection from '@/views/flex-direction/index.vue'
+import justifyContent from '@/views/justify-content/index.vue';
 
 </script>
 
@@ -20,6 +16,5 @@ main {
     max-width: 1024px;
     width: 100%;
     margin: auto;
-    padding: 16px;
 }
 </style>

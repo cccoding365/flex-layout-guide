@@ -1,26 +1,31 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h3 {
+	margin: 1rem 0;
 }
 
 .container {
-  background-color: #eee;
-  margin-bottom: 16px;
-  display: flex;
+	background-color: #eee;
+	border: 16px solid #ccc;
+	margin-bottom: 16px;
+	display: flex;
 }
 
 .container .item {
-  width: 100px;
-  height: 100px;
-  background-color: orange;
-  border: 1px solid #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+	border: 1px solid #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .container .item .innerbox {
-  color: #fff;
-  font-size: 36px;
+	color: #fff;
+	font-size: 36px;
 }
