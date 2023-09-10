@@ -16,16 +16,19 @@ h3 {
 }
 
 .container .item {
-	width: 100px;
-	height: 100px;
 	background-color: orange;
 	border: 1px solid #fff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	width: fit-content;
 }
 
 .container .item .innerbox {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
 	color: #fff;
 	font-size: 36px;
 }
