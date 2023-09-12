@@ -17,7 +17,9 @@ h3 {
 
 .container .item {
 	background-color: orange;
+	position: relative;
 	border: 1px solid #fff;
+	color: #fff;
 	display: flex;
 	align-items: center;
 	justify-content: center;

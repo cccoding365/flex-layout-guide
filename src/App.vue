@@ -5,6 +5,7 @@
         <alignItems />
         <flexWrap />
         <alignContent />
+        <order />
     </main>
 </template>
 
@@ -14,6 +15,8 @@ import justifyContent from '@/views/justify-content/index.vue'
 import alignItems from '@/views/align-items/index.vue'
 import flexWrap from '@/views/flex-wrap/index.vue'
 import alignContent from '@/views/align-content/index.vue'
+
+import order from './views/order/index.vue';
 
 </script>
 
