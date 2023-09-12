@@ -1,5 +1,5 @@
 <template>
-    <flexBox :num="3" />
+    <flexBox :num="3" :flexGrow="[, 1,]" />
 </template>
 
 <script setup>
@@ -8,6 +8,6 @@ import flexBox from '@/components/flexBox.vue'
 
 <style lang="less" scoped>
 .container {
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 </style>
