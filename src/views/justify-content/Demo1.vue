@@ -1,5 +1,5 @@
 <template>
-    <flexBox :num="3" />
+    <flexBox title="justify-content: flex-start;" :num="3" />
 </template>
 
 <script setup>

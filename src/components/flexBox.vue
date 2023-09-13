@@ -1,34 +1,68 @@
 <template>
     <div class="container">
-        <div class="item" :style="{
-            order: order ? order[idx] : 0,
-            flexGrow: flexGrow ? flexGrow[idx] : 0,
-            flexBasis: flexBasis ? flexBasis[idx] : 'auto',
-            alignSelf: alignSelf ? alignSelf[idx] : 'auto'
-        }" v-for="(item, idx ) in num">
-            <div class="innerbox">{{ idx + 1 }}</div>
-            <span class="order-text" v-if="order ? order[idx] : false"> {{ `order:${order[idx]};` }} </span>
-            <span class="order-text" v-if="flexGrow ? flexGrow[idx] : false"> {{ `flex-grow:${flexGrow[idx]};` }} </span>
-            <span class="order-text" v-if="flexBasis ? flexBasis[idx] : false"> {{ `flex-basis:${flexBasis[idx]};` }}</span>
-            <span class="order-text" v-if="alignSelf ? alignSelf[idx] : false"> {{ `align-self:${alignSelf[idx]};` }}</span>
+        <div class="title">{{ title }}</div>
+        <div class="item" v-for="(item, idx ) in num" :style="{
+            order: order[idx],
+            flexGrow: flexGrow[idx],
+            flexBasis: flexBasis[idx],
+            alignSelf: alignSelf[idx]
+        }">
+            <div class="innerbox">{{ item }}</div>
+            <span v-if="order[idx]"> {{ `order: ${order[idx]};` }} </span>
+            <span v-if="flexGrow[idx]"> {{ `flex-grow: ${flexGrow[idx]};` }} </span>
+            <span v-if="flexBasis[idx]"> {{ `flex-basis: ${flexBasis[idx]};` }}</span>
+            <span v-if="alignSelf[idx]"> {{ `align-self: ${alignSelf[idx]};` }}</span>
         </div>
     </div>
 </template>
 
 <script setup>
-
 defineProps({
-    num: Number,
-    order: Array,
-    flexGrow: Array,
-    flexBasis: Array,
-    alignSelf: Array
+    title: {
+        type: String,
+        default: ''
+    },
+    num: {
+        type: Number,
+        default: 0
+    },
+    order: {
+        type: Array,
+        default: []
+    },
+    flexGrow: {
+        type: Array,
+        default: []
+    },
+    flexBasis: {
+        type: Array,
+        default: []
+    },
+    alignSelf: {
+        type: Array,
+        default: []
+    }
 })
 
 </script>
 
 <style lang="less" scoped>
-.order-text {
+.title {
+    position: absolute;
+    top: 0px;
+    right: -16px;
+    transform: translate(0, -100%);
+    background-color: #ccc;
+    padding: 5px 16px;
+    font-size: 16px;
+    line-height: 32px;
+    z-index: 99;
+    font-weight: bold;
+    color: #fff;
+    border-top-left-radius: 10px;
+}
+
+span {
     position: absolute;
     font-size: 12px;
     bottom: 10px;

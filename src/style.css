@@ -11,8 +11,9 @@ h3 {
 .container {
 	background-color: #eee;
 	border: 16px solid #ccc;
-	margin-bottom: 16px;
+	margin-bottom: 48px;
 	display: flex;
+	position: relative;
 }
 
 .container .item {

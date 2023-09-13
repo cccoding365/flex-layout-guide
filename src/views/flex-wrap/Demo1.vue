@@ -1,5 +1,5 @@
 <template>
-    <flexBox :num="10" />
+    <flexBox title="flex-wrap: nowrap;" :num="10" />
 </template>
 
 <script setup>

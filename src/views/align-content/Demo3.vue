@@ -1,5 +1,5 @@
 <template>
-    <flexBox :num="27" />
+    <flexBox title="align-content: center;" :num="27" />
 </template>
 
 <script setup>

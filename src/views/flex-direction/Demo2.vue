@@ -1,5 +1,5 @@
 <template>
-    <flexBox :num="3" />
+    <flexBox title="flex-direction: column;" :num="3" />
 </template>
 
 <script setup>
