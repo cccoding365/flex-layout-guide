@@ -8,6 +8,7 @@
         <order />
         <flexGrow />
         <flexBasis />
+        <alignSelf />
     </main>
 </template>
 
@@ -20,7 +21,8 @@ import alignContent from '@/views/align-content/index.vue'
 
 import order from '@/views/order/index.vue'
 import flexGrow from '@/views/flex-grow/index.vue'
-import flexBasis from '@/views/flex-basis/index.vue';
+import flexBasis from '@/views/flex-basis/index.vue'
+import alignSelf from '@/views/align-self/index.vue';
 
 </script>
 
