@@ -20,6 +20,6 @@ import Demo6 from './Demo6.vue'
 
 <style lang="less" scoped>
 .container {
-    height: 500px;
+    height: 600px;
 }
 </style>

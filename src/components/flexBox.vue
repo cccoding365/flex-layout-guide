@@ -65,11 +65,11 @@ defineProps({
 span {
     position: absolute;
     font-size: 12px;
-    bottom: 10px;
+    bottom: 5px;
     width: fit-content;
     white-space: nowrap;
     padding: 3px 6px;
     border-radius: 3px;
-    background-color: #666;
+    background-color: #aaa;
 }
 </style>

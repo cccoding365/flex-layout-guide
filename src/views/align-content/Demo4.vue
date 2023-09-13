@@ -1,5 +1,5 @@
 <template>
-    <flexBox title="align-content: flex-end;" :num="27" />
+    <flexBox title="align-content: flex-end;" :num="24" />
 </template>
 
 <script setup>
