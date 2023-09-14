@@ -11,7 +11,8 @@
   "dependencies": {
     "less": "^4.2.0",
     "scss": "^0.2.4",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",

@@ -1,32 +1,44 @@
 <template>
+    <header>
+        <router-link to="/">Home</router-link>
+        <router-link to="/container">Container attribute</router-link>
+        <router-link to="/item">Item attribute</router-link>
+    </header>
     <main>
-        <flexDirection />
-        <justifyContent />
-        <alignItems />
-        <flexWrap />
-        <alignContent />
-        <order />
-        <flexGrow />
-        <flexBasis />
-        <alignSelf />
+        <router-view></router-view>
     </main>
 </template>
 
 <script setup>
-import flexDirection from '@/views/flex-direction/index.vue'
-import justifyContent from '@/views/justify-content/index.vue'
-import alignItems from '@/views/align-items/index.vue'
-import flexWrap from '@/views/flex-wrap/index.vue'
-import alignContent from '@/views/align-content/index.vue'
-
-import order from '@/views/order/index.vue'
-import flexGrow from '@/views/flex-grow/index.vue'
-import flexBasis from '@/views/flex-basis/index.vue'
-import alignSelf from '@/views/align-self/index.vue';
 
 </script>
 
 <style lang="less" scoped>
+header {
+    // position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    a {
+        color: #eee;
+        margin-right: 30px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #ccc;
+
+        &:hover {
+            color: orange;
+            opacity: .7;
+        }
+    }
+}
+
 main {
     max-width: 1024px;
     width: 100%;
