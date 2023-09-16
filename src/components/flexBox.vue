@@ -58,7 +58,6 @@ defineProps({
     line-height: 32px;
     z-index: 99;
     font-weight: bold;
-    color: #fff;
     border-top-left-radius: 10px;
 }
 
@@ -70,6 +69,5 @@ span {
     white-space: nowrap;
     padding: 3px 6px;
     border-radius: 3px;
-    background-color: #aaa;
 }
 </style>

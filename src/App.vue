@@ -5,7 +5,9 @@
         <router-link to="/item">ITEM</router-link>
     </header>
     <main>
-        <router-view></router-view>
+        <Transition>
+            <router-view></router-view>
+        </Transition>
     </main>
 </template>
 
@@ -14,6 +16,17 @@
 </script>
 
 <style lang="less" scoped>
+/* 下面我们会解释这些 class 是做什么的 */
+.v-enter-active,
+.v-leave-active {
+    transition: all 0.25s ease-in-out;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+}
+
 header {
     // position: fixed;
     width: 100%;
@@ -30,9 +43,10 @@ header {
         margin-right: 30px;
         padding: 5px 10px;
         border-radius: 5px;
+        transition: all .25s ease-in-out;
 
         &:hover {
-            opacity: .7;
+            text-decoration: underline;
         }
     }
 }
