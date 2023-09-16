@@ -1,5 +1,5 @@
 <template>
-    <h3>flex-direction</h3>
+    <h3>1.flex-direction</h3>
     <Demo1 />
     <Demo2 />
     <Demo3 />
