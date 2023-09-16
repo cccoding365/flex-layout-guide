@@ -1,11 +1,11 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
-const Home = { template: '<div>Home</div>' }
+import FlexLayoutHome from '@/pages/FlexLayoutHome.vue';
 import flexContainer from '@/pages/flexContainer.vue'
 import flexItem from '../pages/flexItem.vue'
 
 const routes = [
-    { path: '/', component: Home },
+    { path: '/', component: FlexLayoutHome },
     { path: '/container', component: flexContainer },
     { path: '/item', component: flexItem }
 ]

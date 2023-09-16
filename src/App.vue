@@ -1,8 +1,8 @@
 <template>
     <header>
-        <router-link to="/">Home</router-link>
-        <router-link to="/container">Container attribute</router-link>
-        <router-link to="/item">Item attribute</router-link>
+        <router-link to="/">HOME</router-link>
+        <router-link to="/container">CONTAINER</router-link>
+        <router-link to="/item">ITEM</router-link>
     </header>
     <main>
         <router-view></router-view>
@@ -30,10 +30,8 @@ header {
         margin-right: 30px;
         padding: 5px 10px;
         border-radius: 5px;
-        background-color: #ccc;
 
         &:hover {
-            color: orange;
             opacity: .7;
         }
     }

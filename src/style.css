@@ -13,6 +13,14 @@ h3 {
 	margin: 1rem 0;
 }
 
+body {
+	height: 100vh;
+	user-select: none;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background: linear-gradient(to top, #f12711, #f5af19);
+}
+
 .container {
 	background-color: #eee;
 	border: 16px solid #ccc;
@@ -27,8 +35,8 @@ h3 {
 	position: relative;
 	border: 3px solid #fff;
 	box-shadow:
-		5px 5px 10px 1px #aaa,
-		-5px -5px 10px 1px #ccc;
+		5px 5px 10px 1px #aaa;
+		/* -5px -5px 10px 1px #ccc; */
 	border-radius: 10px;
 	margin: 4px;
 	color: #fff;
