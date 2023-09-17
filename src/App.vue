@@ -1,8 +1,10 @@
 <template>
     <header>
-        <router-link to="/">HOME</router-link>
-        <router-link to="/container">CONTAINER</router-link>
-        <router-link to="/item">ITEM</router-link>
+        <nav>
+            <router-link to="/">HOME</router-link>
+            <router-link to="/container">CONTAINER</router-link>
+            <router-link to="/item">ITEM</router-link>
+        </nav>
     </header>
     <main>
         <Transition>
@@ -28,15 +30,19 @@
 }
 
 header {
-    // position: fixed;
-    width: 100%;
-    z-index: 999;
+    nav {
+        position: fixed;
+        width: 100vw;
+        z-index: 999;
+        height: 100px;
+        font-size: 24px;
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
     height: 100px;
-    font-size: 24px;
-    font-weight: bold;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 
     a {
         color: #eee;
@@ -55,5 +61,6 @@ main {
     max-width: 1024px;
     width: 100%;
     margin: auto;
+    padding: 50px 0;
 }
 </style>

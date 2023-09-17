@@ -15,6 +15,10 @@
     flex-direction: column;
     align-items: center;
 
+    .logo {
+        filter: drop-shadow(3px 5px rgb(251, 215, 148));
+    }
+
     .title {
         text-align: center;
         color: rgb(251, 215, 148);
