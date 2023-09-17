@@ -1,16 +1,16 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
-import FlexLayoutHome from '@/pages/FlexLayoutHome.vue';
-import flexContainer from '@/pages/flexContainer.vue'
-import flexItem from '../pages/flexItem.vue'
+import Home from '@/pages/Home.vue';
+import FlexContainer from '@/pages/FlexContainer.vue'
+import FlexItem from '../pages/FlexItem.vue'
 
 const routes = [
-    { path: '/', component: FlexLayoutHome },
-    { path: '/container', component: flexContainer },
-    { path: '/item', component: flexItem }
+    { path: '/', component: Home },
+    { path: '/container', component: FlexContainer },
+    { path: '/item', component: FlexItem }
 ]
 
 export default createRouter({
-    history: createWebHashHistory(),
+    history: createWebHistory(),
     routes,
 })
