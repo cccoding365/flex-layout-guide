@@ -1,5 +1,5 @@
 <template>
-    <h1>Flex Item Attribute</h1>
+    <h1>Ⅱ.Properties for the Items</h1>
     <order />
     <flexGrow />
     <flexBasis />

@@ -1,5 +1,5 @@
 <template>
-    <h1>Flex Container Attribute</h1>
+    <h1>Ⅰ.Properties for the Container</h1>
     <flexDirection />
     <justifyContent />
     <alignItems />
