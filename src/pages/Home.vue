@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <img class="logo" src="/favicon.svg">
+        <img class="logo" src="/logo.svg">
         <h1 class="title">Flex Layout Guide</h1>
     </div>
 </template>
