@@ -5,7 +5,7 @@ Flexbox is a one-dimensional layout method for arranging items in rows or column
 ## Ⅰ.Container properties
 
 1. flex-direction
-```css
+```
 .container {
   flex-direction: row | row-reverse | column | column-reverse;
 }
@@ -16,7 +16,7 @@ Flexbox is a one-dimensional layout method for arranging items in rows or column
 - column-reverse: same as row-reverse but bottom to top
 
 2. justify-content
-```css
+```
 .container {
   justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
 }
@@ -33,7 +33,7 @@ Flexbox is a one-dimensional layout method for arranging items in rows or column
 - space-evenly: items are distributed so that the spacing between any two items (and the space to the edges) is equal.
 
 3. align-items
-```css
+```
 .container {
   align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
 }
@@ -44,7 +44,7 @@ Flexbox is a one-dimensional layout method for arranging items in rows or column
 - flex-end / end / self-end: items are placed at the end of the cross axis. The difference again is subtle and is about respecting flex-direction rules vs. writing-mode rules.
 
 4. flex-wrap
-```css
+```
 .container {
   flex-wrap: nowrap | wrap | wrap-reverse;
 }
@@ -54,7 +54,7 @@ Flexbox is a one-dimensional layout method for arranging items in rows or column
 - wrap-reverse: flex items will wrap onto multiple lines from bottom to top.
 
 5. align-content
-```css
+```
 .container {
   align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
 }
@@ -71,25 +71,25 @@ Flexbox is a one-dimensional layout method for arranging items in rows or column
 ## Ⅱ.Item properties
 
 1. order
-```css
+```
 .item {
   order: 5; /* default is 0 */
 }
 ```
 2. flex-grow
-```css
+```
 .item {
   flex-grow: 4; /* default 0 */
 }
 ```
 3. flex-basis
-```css
+```
 .item {
   flex-basis:  | auto; /* default auto */
 }
 ```
 4. align-self
-```css
+```
 .item {
   align-self: auto | flex-start | flex-end | center | baseline | stretch;
 }
