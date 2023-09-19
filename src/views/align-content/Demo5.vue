@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import flexBox from '@/components/flexBox.vue'
+import flexBox from '@/components/flexBox'
 </script>
 
 <style lang="less" scoped>

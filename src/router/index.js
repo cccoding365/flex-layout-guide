@@ -3,15 +3,15 @@ import { createRouter, createWebHistory } from 'vue-router'
 const routes = [
     {
         path: '/',
-        component: () => import('@/pages/Home.vue')
+        component: () => import('@/pages/Home')
     },
     {
         path: '/container',
-        component: () => import('@/pages/FlexContainer.vue')
+        component: () => import('@/pages/FlexContainer')
     },
     {
         path: '/item',
-        component: () => import('@/pages/FlexItem.vue')
+        component: () => import('@/pages/FlexItem')
     }
 ]
 

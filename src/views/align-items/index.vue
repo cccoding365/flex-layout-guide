@@ -7,10 +7,10 @@
 </template>
 
 <script setup>
-import Demo1 from './Demo1.vue'
-import Demo2 from './Demo2.vue'
-import Demo3 from './Demo3.vue'
-import Demo4 from './Demo4.vue'
+import Demo1 from './Demo1'
+import Demo2 from './Demo2'
+import Demo3 from './Demo3'
+import Demo4 from './Demo4'
 
 </script>
 

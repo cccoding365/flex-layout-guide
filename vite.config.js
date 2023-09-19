@@ -7,7 +7,8 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": join(__dirname, 'src'),
-    }
+    },
+    extensions: ['.js', '.css', 'less', '.vue']
   },
   plugins: [vue()],
 })

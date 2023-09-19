@@ -8,11 +8,11 @@
 </template>
 
 <script setup>
-import flexDirection from '@/views/flex-direction/index.vue'
-import justifyContent from '@/views/justify-content/index.vue'
-import alignItems from '@/views/align-items/index.vue'
-import flexWrap from '@/views/flex-wrap/index.vue'
-import alignContent from '@/views/align-content/index.vue'
+import flexDirection from '@/views/flex-direction'
+import justifyContent from '@/views/justify-content'
+import alignItems from '@/views/align-items'
+import flexWrap from '@/views/flex-wrap'
+import alignContent from '@/views/align-content'
 
 </script>
 

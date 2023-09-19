@@ -4,7 +4,7 @@
 </template>
 
 <script setup>
-import Demo1 from './Demo1.vue'
+import Demo1 from './Demo1'
 
 </script>
 
