@@ -1,13 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import Home from '@/pages/Home.vue';
-import FlexContainer from '@/pages/FlexContainer.vue'
-import FlexItem from '../pages/FlexItem.vue'
-
 const routes = [
-    { path: '/', component: Home },
-    { path: '/container', component: FlexContainer },
-    { path: '/item', component: FlexItem }
+    {
+        path: '/',
+        component: () => import('@/pages/Home.vue')
+    },
+    {
+        path: '/container',
+        component: () => import('@/pages/FlexContainer.vue')
+    },
+    {
+        path: '/item',
+        component: () => import('@/pages/FlexItem.vue')
+    }
 ]
 
 export default createRouter({
