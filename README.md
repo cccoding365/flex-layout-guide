@@ -1,8 +1,8 @@
-# Flex Layout Guide
+# <center> Flex Layout Guide </center>
 
 Flexbox is a one-dimensional layout method for arranging items in rows or columns. Items flex (expand) to fill additional space or shrink to fit into smaller spaces. This project explains all the usage.
 
-## Container properties
+## Ⅰ.Container properties
 
 1. flex-direction
 2. justify-content
@@ -10,7 +10,7 @@ Flexbox is a one-dimensional layout method for arranging items in rows or column
 4. flex-wrap
 5. align-content
 
-## Item properties
+## Ⅱ.Item properties
 
 1. order
 2. flex-grow
