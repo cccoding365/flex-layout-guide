@@ -1,9 +1,8 @@
 import { createApp } from 'vue'
-import App from '@/App.vue'
+import App from '@/App'
 
 import router from '@/router'
 
-// 导入全局样式
 import '@/style.css'
 
 const app = createApp(App)

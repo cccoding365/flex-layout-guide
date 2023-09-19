@@ -7,27 +7,13 @@
         </nav>
     </header>
     <main>
-        <Transition>
-            <router-view></router-view>
-        </Transition>
+        <router-view />
     </main>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style lang="less" scoped>
-.v-enter-active,
-.v-leave-active {
-    transition: all 0.25s ease-in-out;
-}
-
-.v-enter-from,
-.v-leave-to {
-    opacity: 0;
-}
-
 header {
     nav {
         position: fixed;
