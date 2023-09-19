@@ -18,7 +18,6 @@
 </script>
 
 <style lang="less" scoped>
-/* 下面我们会解释这些 class 是做什么的 */
 .v-enter-active,
 .v-leave-active {
     transition: all 0.25s ease-in-out;
